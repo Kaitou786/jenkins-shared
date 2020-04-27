@@ -1,4 +1,3 @@
-#here sample pipeline will execute
 def call(){
   pipeline{
     agent {label 'jenkins-slave'}
