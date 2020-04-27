@@ -6,6 +6,7 @@ def call(){
         steps{
         echo "I'm creating a file"
         sh "pwd && touch test"
+        sh "git branch"
         }
       }
     }
