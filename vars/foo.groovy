@@ -4,7 +4,7 @@ def call(){
     stages{
       stage('Sample stage'){
         steps{
-        sh "I am called from a shared pipeline"
+        echo "I am called from a shared pipeline"
         }
       }
     }
