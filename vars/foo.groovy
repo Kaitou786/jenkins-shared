@@ -5,7 +5,7 @@ def call(){
       stage('Sample stage'){
         steps{
         echo "I'm creating a file"
-        sh "touch test"
+        sh "pwd && touch test"
         }
       }
     }
