@@ -1,4 +1,5 @@
 @Library('kogito_shared') _
+foo()
 node('jenkins-slave'){
     stage('test'){
         //def branch=input(
@@ -15,4 +16,4 @@ node('jenkins-slave'){
        // sh "git checkout "+ branch
     }
 }
-foo()
+
