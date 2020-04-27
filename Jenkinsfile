@@ -8,7 +8,8 @@ node('jenkins-slave'){
     ]
     )
         echo("hello there")
-        sh "echo \$(env.branch)"
+        echo(branch)
+        sh "echo "+ branch
         sh "pwd && ls -l test"
     }
 }
