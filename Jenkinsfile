@@ -8,7 +8,7 @@ node('jenkins-slave'){
        // [$class: 'StringParameterDefinition', defaultValue: 'None', description: 'List of tags', name: 'coreImageTagsList'],
    //  ]
     //)
-        echo(branch)
+        echo("hello there")
         sh "pwd && ls -l test"
     }
 }
