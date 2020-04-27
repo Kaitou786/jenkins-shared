@@ -11,6 +11,7 @@ node('jenkins-slave'){
         echo(branch)
         sh "echo "+ branch
         sh "pwd && ls -l test"
+        sh "git checkout "+ branch
     }
 }
 foo()
