@@ -2,9 +2,16 @@ def call(){
   pipeline{
     agent {label 'jenkins-slave'}
     stages{
-      stage('Sample stage'){
+      stage('Build'){
         steps{
-        echo "I'm creating a file"
+        echo "I'm building the images"
+        sh "pwd && touch test"
+        sh "ls -l"
+        }
+      }
+      stage('Test'){
+        steps{
+        echo "I'm Testing them"
         sh "pwd && touch test"
         sh "ls -l"
         }
