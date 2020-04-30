@@ -1,7 +1,7 @@
 @Library('kogito_shared') _
 foo()
 node('jenkins-slave'){
-    stage('test'){
+    stage('Push'){
         //def branch=input(
        // message: 'Is it okay to publish?',
        // parameters: [
@@ -14,6 +14,9 @@ node('jenkins-slave'){
         //sh "echo "+ branch
         //sh "pwd && ls -l test"
        // sh "git checkout "+ branch
+    }
+    stage('delete'){
+        echo("deleting the images")
     }
 }
 
