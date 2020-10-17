@@ -1,5 +1,5 @@
 @Library('kogito_shared') _
-foo()
+vartest()
 node('jenkins-slave'){
     stage('Push'){
         //def branch=input(
