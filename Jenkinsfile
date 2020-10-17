@@ -10,10 +10,10 @@ node('jenkins-slave'){
  //   )
         echo("hello there")
         sh "ls -l"
-        //echo(branch)
-        //sh "echo "+ branch
-        //sh "pwd && ls -l test"
-       // sh "git checkout "+ branch
+        echo(branch)
+        sh "echo "+ branch
+        sh "pwd && ls -l test"
+        sh "git checkout "+ branch
     }
     stage('delete'){
         echo("deleting the images")
