@@ -2,11 +2,11 @@
 foo()
 node('jenkins-slave'){
     stage('Push'){
-        //def branch=input(
-       // message: 'Is it okay to publish?',
-       // parameters: [
-     //   [$class: 'StringParameterDefinition', defaultValue: 'None', description: 'List of tags', name: 'coreImageTagsList'],
-   // ]
+        def branch=input(
+        message: 'Is it okay to publish?',
+        parameters: [
+        [$class: 'StringParameterDefinition', defaultValue: 'None', description: 'List of tags', name: 'coreImageTagsList'],
+    ]
  //   )
         echo("hello there")
         sh "ls -l"
